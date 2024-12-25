@@ -1,42 +1,42 @@
-# Projet Mbot
+# Mbot Project
 
-Ce projet permet de contrôler un robot ESP8266 via une interface web. Le robot peut avancer, reculer, tourner à gauche, tourner à droite et s'arrêter.
+This project allows you to control an ESP8266 robot via a web interface. The robot can move forward, backward, turn left, turn right, and stop.
 
-## Matériel requis
+## Required Hardware
 
 - ESP8266
-- Moteurs connectés aux broches GPIO de l'ESP8266
+- Motors connected to the GPIO pins of the ESP8266
 
-## Configuration des broches
+## Pin Configuration
 
-Les broches GPIO utilisées pour contrôler les moteurs sont définies comme suit :
+The GPIO pins used to control the motors are defined as follows:
 
-- IN1 : D1 (GPIO5)
-- IN2 : D2 (GPIO4)
-- IN3 : D5 (GPIO14)
-- IN4 : D6 (GPIO12)
+- IN1: D1 (GPIO5)
+- IN2: D2 (GPIO4)
+- IN3: D5 (GPIO14)
+- IN4: D6 (GPIO12)
 
 ## Installation
 
-1. Clonez ce dépôt ou téléchargez les fichiers.
-2. Ouvrez le fichier `mbot.ino` dans l'IDE Arduino.
-3. Assurez-vous d'avoir les bibliothèques suivantes installées :
+1. Clone this repository or download the files.
+2. Open the `mbot.ino` file in the Arduino IDE.
+3. Make sure you have the following libraries installed:
    - ESP8266WiFi
    - ESPAsyncWebServer
-4. Connectez votre ESP8266 à votre ordinateur.
-5. Téléversez le code sur votre ESP8266.
+4. Connect your ESP8266 to your computer.
+5. Upload the code to your ESP8266.
 
-## Utilisation
+## Usage
 
-1. Une fois le code téléversé, l'ESP8266 créera un point d'accès Wi-Fi avec le SSID `ESP-Robot`.
-2. Connectez-vous à ce réseau Wi-Fi (aucun mot de passe requis).
-3. Ouvrez un navigateur web et accédez à l'adresse IP affichée dans le moniteur série (généralement `192.168.4.1`).
-4. Utilisez l'interface web pour contrôler le robot.
+1. Once the code is uploaded, the ESP8266 will create a Wi-Fi access point with the SSID `ESP-Robot`.
+2. Connect to this Wi-Fi network (no password required).
+3. Open a web browser and go to the IP address displayed in the serial monitor (usually `192.168.4.1`).
+4. Use the web interface to control the robot.
 
-## Commandes disponibles
+## Available Commands
 
-- **Avancer** : Le robot avance.
-- **Reculer** : Le robot recule.
-- **Gauche** : Le robot tourne à gauche.
-- **Droite** : Le robot tourne à droite.
-- **Stop** : Le robot s'arrête.
+- **Forward**: The robot moves forward.
+- **Backward**: The robot moves backward.
+- **Left**: The robot turns left.
+- **Right**: The robot turns right.
+- **Stop**: The robot stops.
